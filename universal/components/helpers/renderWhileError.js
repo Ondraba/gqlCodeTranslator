@@ -1,4 +1,3 @@
-
 import  { branch, renderComponent } from 'recompose'
 
 const Error = () => (

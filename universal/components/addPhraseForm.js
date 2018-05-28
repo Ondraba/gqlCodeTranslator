@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Router from "next/router";
 import { Formik } from "formik";
-import Error from "./Error";
+import Error from "./error";
 import { graphql } from "react-apollo";
 import gql from "graphql-tag";
 
@@ -31,7 +31,6 @@ class AddPhraseForm extends Component {
           phrase: ""
         }}
         validate={values => {
-          // same as above, but feel free to move this into a class method now.
           let errors = {};
 
           const { phrase } = values;
@@ -65,7 +64,7 @@ class AddPhraseForm extends Component {
           <form onSubmit={handleSubmit}>
           <div>
               <input
-                type="content"
+                type="number"
                 name="phrase"
                 onChange={handleChange}
                 onBlur={handleBlur}

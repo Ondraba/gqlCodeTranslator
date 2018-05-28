@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Button from "react-bootstrap/lib/Button";
 
-export default ({ children, title = "Autoškoly Kolín" }) => (
+export default ({ children, title = "GQLCodeTranslator" }) => (
   <div id="globalWrapper" style={styles.globalWrapper}>
     <Head>
       <title>{title}</title>
