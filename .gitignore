@@ -1,0 +1,14 @@
+# build output
+.next
+
+# dependencies
+node_modules
+
+# logs
+*.log
+
+# ignore IDE's
+.vscode
+
+# to do list
+TODOLIST
