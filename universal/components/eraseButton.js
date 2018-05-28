@@ -1,6 +1,7 @@
 import React from "react";
 
 import query from "../../queries/phrases";
+import gql from "graphql-tag";
 
 const EraseButton = props => (
   <div
@@ -15,14 +16,14 @@ const EraseButton = props => (
 );
 
 
-const mutation = gql`
-  mutation EraseAll() {
-    eraseAll() {
-      _id
-      phrase
-      translation
-    }
-  }
-`;
+// const mutation = gql`
+//   mutation EraseAll() {
+//     eraseAll() {
+//       _id
+//       phrase
+//       translation
+//     }
+//   }
+// `;
 
 export default EraseButton;
