@@ -72,7 +72,7 @@ class AddPhraseForm extends Component {
               />
               {touched.phrase && errors.phrase && <Error value={errors.phrase} />}
             </div>
-            <button type="submit" disabled={isSubmitting} style={styles.button}>
+            <button type="submit" style={styles.button}>
               Přeložit
             </button>
           </form>

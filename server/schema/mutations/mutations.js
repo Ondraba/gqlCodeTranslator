@@ -17,7 +17,14 @@ const mutation = new GraphQLObjectType({
       resolve(parentValue, { phrase }) {
         return Phrase.save(phrase);
       }
-    }
+    },
+    deletePhrase: {
+      type: PhraseType,
+      args: { _id: { type:GraphQLID } },
+        resolve(parentValue, { _id }){
+          return Phrase.remove({ _id })
+        }
+    },
   }
 });
 

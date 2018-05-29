@@ -4,6 +4,7 @@ import { graphql } from "react-apollo";
 import { branch, compose, renderComponent } from 'recompose';
 import { RenderWhileLoading } from "./helpers/renderWhileLoading";
 import { RenderWhileError } from "./helpers/renderWhileError";
+import  Phrase  from "./phrase";
 
 import query from "../../queries/phrases";
 
@@ -14,8 +15,7 @@ const Phrases = props => {
     <div style={styles}>
      {phrases.map(phrase => (
        <div style={styles.phrase}>
-        <div>{phrase.phrase}</div>
-        <div>{phrase.translation}</div>
+        <Phrase { ...phrase } />
        </div>
       ))}
     </div>

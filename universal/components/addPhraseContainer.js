@@ -11,7 +11,6 @@ class AddPhraseContainer extends Component {
 
     getNewestPhrase(newestPhrase, newestTranslation){
         this.setState({ newestPhrase, newestTranslation })
-        console.log(this.state)
     }
   
     render() {
