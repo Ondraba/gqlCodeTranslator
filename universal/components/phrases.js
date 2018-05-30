@@ -14,7 +14,7 @@ const Phrases = props => {
   return (
     <div style={styles}>
      {phrases.map(phrase => (
-       <div style={styles.phrase}>
+       <div style={styles.phrase} key={ phrase._id }>
         <Phrase { ...phrase } />
        </div>
       ))}

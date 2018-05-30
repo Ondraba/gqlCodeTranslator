@@ -13,7 +13,10 @@ const EraseButton = props => {
     props.mutate({
       variables: {
        _id: _id
-      }
+      },
+      refetchQueries: [{ 
+        query: query
+      }]
     })
   }
 

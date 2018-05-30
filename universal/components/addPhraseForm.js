@@ -5,6 +5,8 @@ import Error from "./error";
 import { graphql } from "react-apollo";
 import gql from "graphql-tag";
 
+import query from "../../queries/phrases";
+
 class AddPhraseForm extends Component {
   constructor(props) {
     super(props);
@@ -17,10 +19,13 @@ class AddPhraseForm extends Component {
       .mutate({
         variables: {
           phrase
-        }
+        },
+        refetchQueries: [{ 
+          query: query
+        }]
       })
       .then(({data}) => {
-        data = null ? console.log("Phrase promise resolved data is null") : this.props.getNewestPhrase(data.addPhrase.phrase, data.addPhrase.translation)
+        data = null ? console.log("Phrase promise resolved data is null") : this.props.getNewestPhrase(data.addPhrase.phrase, data.addPhrase.translation, data.addPhrase._id)
       })
   }
 

@@ -5,12 +5,12 @@ import AddPhraseForm from "./addPhraseForm";
 class AddPhraseContainer extends Component {
     constructor(props){
         super(props);
-        this.state = { newestPhrase: null, newestTranslation: null };
+        this.state = { newestPhrase: null, newestTranslation: null, _id: null };
         this.getNewestPhrase = this.getNewestPhrase.bind(this);
     }
 
-    getNewestPhrase(newestPhrase, newestTranslation){
-        this.setState({ newestPhrase, newestTranslation })
+    getNewestPhrase(newestPhrase, newestTranslation, _id){
+        this.setState({ newestPhrase, newestTranslation, _id })
     }
   
     render() {

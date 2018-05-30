@@ -10,7 +10,6 @@ const Index = props => {
     <FullPageTemplate>
        <AddPhraseContainer {...props} />
        <Phrases />
-       <EraseButton />
     </FullPageTemplate>
   );
 };
