@@ -11,3 +11,4 @@ se po resolve mutace dane promisi jednak preposle obsah nove fraze do zobrazovac
 chyb ci loaderu pri nezajisteni (a pro dalsi HOC ala compose) jsem pouzil knihovnu Recompose.
 * Na aplikaci jsem pouzil muj prozatim oblibeny stack RNG. 
 
+* Jak rozebehnout: git pull, npm install, npm run dev :-)
